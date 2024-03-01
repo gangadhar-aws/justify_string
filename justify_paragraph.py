@@ -31,6 +31,10 @@ def justify_paragraph(paragraph, page_width):
 
     return justified_lines
 
+lines = justify_paragraph(paragraph=input("Enter Paragraph: "), page_width=int(input("Enter Page Width: ")))
+for i in lines:
+    print(i)
+
 # paragraph = "This is a sample text but a complicated problem to be solved, so we are adding more text to see that it actually works."
 # para = justify_paragraph(paragraph, page_width=20)
 # for i in para:
