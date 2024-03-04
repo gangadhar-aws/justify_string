@@ -36,18 +36,22 @@ def justify_paragraph(paragraph, page_width):
     return justified_lines
 
 def main():
-    paragraph= input("Enter The Paragraph :")
-    page_width = int(input("Enter The Page Width: "))
-    lines = justify_paragraph(paragraph=paragraph, page_width=page_width)
+    try:
+        paragraph= input("Enter The Paragraph :")
+        page_width = int(input("Enter The Page Width: "))
+        lines = justify_paragraph(paragraph=paragraph, page_width=page_width)
 
-    for i in lines:
-        print(i)
-
-
+        for i in lines:
+            print(i)
+    except ValueError:
+        print("Error: Please Enter a valid Page width integer.")
+    except Exception as e:
+        print("An unexpected error occurred.",e)
+        
 if __name__ == "__main__":
     main()
 
 # paragraph = "This is a sample text but a complicated problem to be solved, so we are adding more text to see that it actually works."
 # para = justify_paragraph(paragraph, page_width=20)
 # for i in para:
-#     print(i)
+#     print(i)hel
