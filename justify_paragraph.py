@@ -9,6 +9,9 @@ def justify_paragraph(paragraph, page_width):
     current_line = words[0]
 
     for word in words[1:]:
+        if len(word) > page_width:
+            raise ValueError("Word '{}' is longer than the specified page width.".format(word))
+
         if len(current_line) + len(word) + 1 <= page_width:
             current_line += ' ' + word
         else:
