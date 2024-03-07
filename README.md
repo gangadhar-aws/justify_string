@@ -1,6 +1,9 @@
 ## justify_string
 This repository contains a Python program to justify paragraphs by splitting them into lines with left and right justification. It also includes unit tests to ensure the correctness of the justification algorithm.
 
+## Program Description
+The `justify_paragraph.py` file contains a Python function `justify_paragraph(paragraph, page_width)` that accepts a paragraph string and a page width as parameters. It then returns an array of left and right justified strings, ensuring that words are not broken when wrapping lines.
+
 ## How To Use
 To use the program, follow these steps:
 
