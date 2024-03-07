@@ -1,8 +1,8 @@
 
 def justify_paragraph(paragraph, page_width):
     
-    if len(paragraph) == 0:
-        return [""]
+    if not paragraph:
+        return ['']
     
     words = paragraph.split()
     lines = []
