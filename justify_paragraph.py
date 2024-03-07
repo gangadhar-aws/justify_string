@@ -50,8 +50,4 @@ def main():
         
 if __name__ == "__main__":
     main()
-
-# paragraph = "This is a sample text but a complicated problem to be solved, so we are adding more text to see that it actually works."
-# para = justify_paragraph(paragraph, page_width=20)
-# for i in para:
-#     print(i)hel
+    
