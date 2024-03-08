@@ -39,8 +39,16 @@ def justify_paragraph(paragraph, page_width):
     return justified_lines
 
 def main():
-    try:
+
+
+    while True:
         paragraph= input("Enter The Paragraph :")
+        if paragraph:
+            break
+        
+        else:
+            print("Error: Please enter a non-empty paragraph.")
+    try:
         page_width = int(input("Enter The Page Width: "))
         lines = justify_paragraph(paragraph=paragraph, page_width=page_width)
 
