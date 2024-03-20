@@ -43,7 +43,6 @@ def main():
         paragraph= input("Enter The Paragraph :")
         if paragraph:
             break
-        he
         else:
             print("Error: Please enter a non-empty paragraph.")
     try:
