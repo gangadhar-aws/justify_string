@@ -45,16 +45,18 @@ def main():
             break
         else:
             print("Error: Please enter a non-empty paragraph.")
-    try:
-        page_width = int(input("Enter The Page Width: "))
-        lines = justify_paragraph(paragraph=paragraph, page_width=page_width)
+    while True:         
+        try:
+            page_width = int(input("Enter The Page Width: "))
+            lines = justify_paragraph(paragraph=paragraph, page_width=page_width)
 
-        for i in lines:
-            print(i)
-    except ValueError:
-        print("Error: Please Enter a valid Page width integer.")
-    except Exception as e:
-        print("An unexpected error occurred.",e)
+            for i in lines:
+                print(i)
+            break
+        except ValueError:
+            print("Error: Please Enter a valid Page width integer.")
+        except Exception as e:
+            print("An unexpected error occurred.",e)
      
         
 if __name__ == "__main__":
