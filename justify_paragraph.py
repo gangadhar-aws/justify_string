@@ -1,9 +1,7 @@
 
 def justify_paragraph(paragraph, page_width):
-    
-    if not paragraph:
-        return ['']
-    
+
+
     words = paragraph.split()
     lines = []
     current_line = words[0]
@@ -18,7 +16,7 @@ def justify_paragraph(paragraph, page_width):
             lines.append(current_line)
             current_line = word
 
-    lines.append(current_line)  
+    lines.append(current_line) 
 
     justified_lines = []
 
@@ -37,6 +35,7 @@ def justify_paragraph(paragraph, page_width):
         justified_lines.append(justified_line)
 
     return justified_lines
+
 
 def main():
 
