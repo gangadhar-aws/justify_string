@@ -6,6 +6,7 @@ def justify_paragraph(paragraph, page_width):
     lines = []
     current_line = words[0]
 
+
     for word in words[1:]:
         if len(word) > page_width:
             raise ValueError("Word '{}' is longer than the specified page width.".format(word))
@@ -17,9 +18,7 @@ def justify_paragraph(paragraph, page_width):
             current_line = word
 
     lines.append(current_line) 
-
     justified_lines = []
-
     for line in lines:
         words_in_line = line.split()
         if len(words_in_line) > 1:
@@ -57,6 +56,7 @@ def main():
         print("Error: Please Enter a valid Page width integer.")
     except Exception as e:
         print("An unexpected error occurred.",e)
+     
         
 if __name__ == "__main__":
     main()
